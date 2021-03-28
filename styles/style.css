@@ -1,0 +1,83 @@
+html {
+    font-size: 10px;
+    font-family: "Roboto", "sans-serif";
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 0 0;
+    color: black;
+    text-shadow: 3px 3px 1px grey;
+}
+
+h2,
+h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+}
+
+li:hover {
+    color: #00FFFF;
+}
+
+body {
+    min-width: 1170px;
+    margin: 0 auto;
+    background-color: #00f7ff;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+table,
+td {
+    width: 1170px;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr {
+    text-align: center;
+}
+
+th[scope="col"] {
+    background-color: black;
+    color: #fff;
+}
+
+th[scope="rownames"] {
+    background-color: black;
+    color: #fff;
+}

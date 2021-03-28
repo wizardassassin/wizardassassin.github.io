@@ -1,0 +1,378 @@
+{
+    "Cobblestone": {
+        "items": {
+            "ENCHANTED_COBBLESTONE": 1
+        },
+        "tier": [14, 14, 12, 12, 10, 10, 9, 9, 8, 8, 7],
+        "special": 1
+    },
+    "Obsidian": {
+        "items": {
+            "ENCHANTED_OBSIDIAN": 1
+        },
+        "tier": [45, 45, 42, 42, 39, 39, 35, 35, 30, 30, 24],
+        "special": 1
+    },
+    "Glowstone": {
+        "items": {
+            "ENCHANTED_GLOWSTONE_DUST": 3
+        },
+        "tier": [25, 25, 23, 23, 21, 21, 19, 19, 16, 16, 13],
+        "special": 1
+    },
+    "Gravel": {
+        "items": {
+            "ENCHANTED_FLINT": 1
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 19, 19, 16, 16, 13],
+        "special": 1
+    },
+    "Sand": {
+        "items": {
+            "ENCHANTED_SAND": 1
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 19, 19, 16, 16, 13],
+        "special": 1
+    },
+    "Clay": {
+        "items": {
+            "ENCHANTED_CLAY_BALL": 4
+        },
+        "tier": [32, 32, 30, 30, 27.5, 27.5, 24, 24, 20, 20, 16],
+        "special": 1
+    },
+    "Ice": {
+        "items": {
+            "ENCHANTED_ICE": 1
+        },
+        "tier": [14, 14, 12, 12, 10, 10, 9, 9, 8, 8, 7],
+        "special": 1
+    },
+    "Snow": {
+        "items": {
+            "ENCHANTED_SNOW_BLOCK": 1
+        },
+        "tier": [13, 13, 12, 12, 11, 11, 9.5, 9.5, 8, 8, 6.5],
+        "special": 1
+    },
+    "Coal": {
+        "items": {
+            "ENCHANTED_COAL": 1
+        },
+        "tier": [15, 15, 13, 13, 12, 12, 10, 10, 9, 9, 7],
+        "special": 1
+    },
+    "Iron": {
+        "items": {
+            "ENCHANTED_IRON": 1
+        },
+        "tier": [17, 17, 15, 15, 14, 14, 12, 12, 10, 10, 8],
+        "special": 1
+    },
+    "Gold": {
+        "items": {
+            "ENCHANTED_GOLD": 1
+        },
+        "tier": [22, 22, 20, 20, 18, 18, 16, 16, 14, 14, 11],
+        "special": 1
+    },
+    "Diamond": {
+        "items": {
+            "ENCHANTED_DIAMOND": 1
+        },
+        "tier": [29, 29, 27, 27, 25, 25, 22, 22, 19, 19, 15],
+        "special": 1
+    },
+    "Lapis": {
+        "items": {
+            "ENCHANTED_LAPIS_LAZULI": 6
+        },
+        "tier": [29, 29, 27, 27, 25, 25, 23, 23, 21, 21, 18],
+        "special": 1
+    },
+    "Redstone": {
+        "items": {
+            "ENCHANTED_REDSTONE": 4.5
+        },
+        "tier": [29, 29, 27, 27, 25, 25, 23, 23, 21, 21, 18],
+        "special": 1
+    },
+    "Emerald": {
+        "items": {
+            "ENCHANTED_EMERALD": 1
+        },
+        "tier": [28, 28, 26, 26, 24, 24, 21, 21, 18, 18, 14],
+        "special": 1
+    },
+    "Quartz": {
+        "items": {
+            "ENCHANTED_QUARTZ": 1
+        },
+        "tier": [22.5, 22.5, 21, 21, 19, 19, 17, 17, 14.5, 14.5, 11.5],
+        "special": 1
+    },
+    "End_Stone": {
+        "items": {
+            "ENCHANTED_ENDSTONE": 1
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 19, 19, 16, 16, 13],
+        "special": 1
+    },
+    "Wheat": {
+        "items": {
+            "ENCHANTED_HAY_BLOCK": 0.11111111111,
+            "ENCHANTED_SEEDS": 0.5
+        },
+        "tier": [15, 15, 13, 13, 11, 11, 10, 10, 9, 9, 8],
+        "special": 1
+    },
+    "Melon": {
+        "items": {
+            "ENCHANTED_MELON": 6
+        },
+        "tier": [24, 24, 22.5, 22.5, 21, 21, 18.5, 18.5, 16, 16, 13],
+        "special": 1
+    },
+    "Pumpkin": {
+        "items": {
+            "ENCHANTED_PUMPKIN": 1
+        },
+        "tier": [32, 32, 30, 30, 27, 27, 24, 24, 20, 20, 16],
+        "special": 1
+    },
+    "Carrot": {
+        "items": {
+            "ENCHANTED_CARROT": 3
+        },
+        "tier": [20, 20, 18, 18, 16, 16, 14, 14, 12, 12, 10],
+        "special": 1
+    },
+    "Potato": {
+        "items": {
+            "ENCHANTED_POTATO": 3
+        },
+        "tier": [20, 20, 18, 18, 16, 16, 14, 14, 12, 12, 10],
+        "special": 1
+    },
+    "Mushroom": {
+        "items": {
+            "ENCHANTED_RED_MUSHROOM": 0.5,
+            "ENCHANTED_BROWN_MUSHROOM": 0.5
+        },
+        "tier": [30, 30, 28, 28, 26, 26, 23, 23, 20, 20, 16],
+        "special": 1
+    },
+    "Cactus": {
+        "items": {
+            "ENCHANTED_CACTUS_GREEN": 3
+        },
+        "tier": [27, 27, 25, 25, 23, 23, 21, 21, 18, 18, 15],
+        "special": 1
+    },
+    "Cocoa_Beans": {
+        "items": {
+            "ENCHANTED_COCOA": 3
+        },
+        "tier": [27, 27, 25, 25, 23, 23, 21, 21, 18, 18, 15],
+        "special": 1
+    },
+    "Sugar_Cane": {
+        "items": {
+            "ENCHANTED_SUGAR": 3
+        },
+        "tier": [22, 22, 20, 20, 18, 18, 16, 16, 14.5, 14.5, 12],
+        "special": 1
+    },
+    "Nether_Wart": {
+        "items": {
+            "ENCHANTED_NETHER_STALK": 2.5
+        },
+        "tier": [50, 50, 47, 47, 44, 44, 41, 41, 38, 38, 32],
+        "special": 1
+    },
+    "Flower": {
+        "items": {
+            "NETHER_STALK": 0
+        },
+        "tier": [29, 29, 28, 27, 26, 25, 24, 23, 22, 20, 18],
+        "special": 1
+    },
+    "Fish": {
+        "items": {
+            "ENCHANTED_RAW_FISH": 1
+        },
+        "tier": [78, 75, 72, 72, 68, 68, 62.5, 62.5, 53, 53, 35],
+        "special": 1
+    },
+    "Zombie": {
+        "items": {
+            "ENCHANTED_ROTTEN_FLESH": 1
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 20, 20, 17, 17, 13],
+        "special": 1
+    },
+    "Revenant": {
+        "items": {
+            "ENCHANTED_ROTTEN_FLESH": 3,
+            "ENCHANTED_DIAMOND": 0.2
+        },
+        "tier": [29, 29, 26, 26, 23, 23, 19, 19, 14.5, 14.5, 10],
+        "special": 1
+    },
+    "Skeleton": {
+        "items": {
+            "ENCHANTED_BONE": 1
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 20, 20, 17, 17, 13],
+        "special": 1
+    },
+    "Creeper": {
+        "items": {
+            "ENCHANTED_GUNPOWDER": 1
+        },
+        "tier": [27, 27, 25, 25, 23, 23, 21, 21, 18, 18, 14],
+        "special": 1
+    },
+    "Spider": {
+        "items": {
+            "ENCHANTED_STRING": 0.83333333333,
+            "ENCHANTED_SPIDER_EYE": 0.5
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 20, 20, 17, 17, 13],
+        "special": 1
+    },
+    "Tarantula": {
+        "items": {
+            "ENCHANTED_STRING": 2.5,
+            "ENCHANTED_SPIDER_EYE": 1,
+            "ENCHANTED_IRON": 0.2
+        },
+        "tier": [29, 29, 26, 26, 23, 23, 19, 19, 14.5, 14.5, 10],
+        "special": 1
+    },
+    "Cave_Spider": {
+        "items": {
+            "ENCHANTED_SPIDER_EYE": 1,
+            "ENCHANTED_STRING": 0.5
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 20, 20, 17, 17, 13],
+        "special": 1
+    },
+    "Blaze": {
+        "items": {
+            "ENCHANTED_BLAZE_POWDER": 1
+        },
+        "tier": [33, 33, 31, 31, 28.5, 28.5, 25, 25, 21, 21, 16.5, 16.5],
+        "special": 1
+    },
+    "Magma_Cube": {
+        "items": {
+            "ENCHANTED_MAGMA_CREAM": 2
+        },
+        "tier": [32, 32, 30, 30, 28, 28, 25, 25, 22, 22, 18],
+        "special": 1
+    },
+    "Enderman": {
+        "items": {
+            "ENCHANTED_ENDER_PEARL": 13.3333333333
+        },
+        "tier": [32, 32, 30, 30, 28, 28, 25, 25, 22, 22, 18],
+        "special": 1
+    },
+    "Ghast": {
+        "items": {
+            "ENCHANTED_GHAST_TEAR": 32
+        },
+        "tier": [50, 50, 47, 47, 44, 44, 41, 41, 38, 38, 32],
+        "special": 1
+    },
+    "Slime": {
+        "items": {
+            "ENCHANTED_SLIME_BALL": 1
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 19, 19, 16, 16, 12],
+        "special": 1
+    },
+    "Cow": {
+        "items": {
+            "ENCHANTED_RAW_BEEF": 1,
+            "ENCHANTED_LEATHER": 0.27777777777
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 20, 20, 17, 17, 13],
+        "special": 1
+    },
+    "Pig": {
+        "items": {
+            "ENCHANTED_PORK": 1
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 20, 20, 17, 17, 13],
+        "special": 1
+    },
+    "Chicken": {
+        "items": {
+            "ENCHANTED_RAW_CHICKEN": 1,
+            "ENCHANTED_FEATHER": 1,
+            "ENCHANTED_EGG": 1
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 20, 20, 18, 18, 15],
+        "special": 1
+    },
+    "Sheep": {
+        "items": {
+            "ENCHANTED_MUTTON": 1
+        },
+        "tier": [24, 24, 22, 22, 20, 20, 18, 18, 16, 16, 12],
+        "special": 1
+    },
+    "Rabbit": {
+        "items": {
+            "ENCHANTED_RABBIT": 1,
+            "ENCHANTED_RABBIT_FOOT": 0.4,
+            "ENCHANTED_RABBIT_HIDE": 0.11111111111
+        },
+        "tier": [26, 26, 24, 24, 22, 22, 20, 20, 17, 17, 13],
+        "special": 1
+    },
+    "Oak": {
+        "items": {
+            "ENCHANTED_OAK_LOG": 4
+        },
+        "tier": [48, 48, 45, 45, 42, 42, 38, 38, 33, 33, 27],
+        "special": 1
+    },
+    "Spruce": {
+        "items": {
+            "ENCHANTED_SPRUCE_LOG": 4
+        },
+        "tier": [48, 48, 45, 45, 42, 42, 38, 38, 33, 33, 27],
+        "special": 1
+    },
+    "Birch": {
+        "items": {
+            "ENCHANTED_BIRCH_LOG": 4
+        },
+        "tier": [48, 48, 45, 45, 42, 42, 38, 38, 33, 33, 27],
+        "special": 1
+    },
+    "Dark_Oak": {
+        "items": {
+            "ENCHANTED_DARK_OAK_LOG": 4
+        },
+        "tier": [48, 48, 45, 45, 42, 42, 38, 38, 33, 33, 27],
+        "special": 1
+    },
+    "Acacia": {
+        "items": {
+            "ENCHANTED_ACACIA_LOG": 4
+        },
+        "tier": [48, 48, 45, 45, 42, 42, 38, 38, 33, 33, 27],
+        "special": 1
+    },
+    "Jungle": {
+        "items": {
+            "ENCHANTED_JUNGLE_LOG": 4
+        },
+        "tier": [48, 48, 45, 45, 42, 42, 38, 38, 33, 33, 27],
+        "special": 1
+    }
+}
