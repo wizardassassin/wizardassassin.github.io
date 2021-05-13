@@ -47,7 +47,9 @@ var freq = 1;
 var log = freq * 1000 / wait;
 var lim = 20;
 
-setInterval(addValue, wait);
+let theLoop;
+
+theLoop = setInterval(addValue, wait);
 
 function addValue() {
     dSet.data[random(type)]++;
@@ -89,10 +91,30 @@ function random(type) {
 
 function randomCS() {
     let buf = new Uint32Array(1);
-    window.crypto.getRandomValues(buf);
+    do
+        window.crypto.getRandomValues(buf);
+    while (buf[0] > 4294967290);
     return buf[0] % 10;
 }
 
 function randomNS() {
     return Math.floor(Math.random() * 10);
+}
+
+function restart() {
+    clearInterval(theLoop);
+    dSet.data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    myChart.update();
+    document.getElementById('rows').innerHTML = '<tr><td>0</td><td>000.000</td><td>0</td></tr>';
+    console.log(document.getElementsByName('input'));
+    for (let i of document.getElementsByName('input')) {
+        if (i.checked) {
+            type = i.value;
+            break;
+        }
+    }
+    console.log(type);
+    iter = 0;
+    time = Date.now();
+    theLoop = setInterval(addValue, wait);
 }
