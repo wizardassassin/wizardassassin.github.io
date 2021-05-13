@@ -1,0 +1,49 @@
+html {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #73ff00;
+}
+
+table {
+    display: block;
+    overflow-y: hidden;
+}
+
+table,
+td {
+    width: 400px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr {
+    text-align: center;
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    height: 30vh;
+    width: 60vw;
+}
+
+#myChart {
+    border: 1px solid #333;
+}
