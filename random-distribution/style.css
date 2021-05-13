@@ -37,11 +37,16 @@ tr {
 }
 
 .chart-container {
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
-    height: 30vh;
     width: 60vw;
+    height: 30vh;
+}
+
+form {
+    padding: 10px;
 }
 
 #myChart {
