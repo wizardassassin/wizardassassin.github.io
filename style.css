@@ -1,5 +1,96 @@
-html {
-    font-size: 15px;
+body {
+    font-size: 1.1rem;
     font-family: "Roboto", "sans-serif";
-    background-color: #a5a5a5ab;
+    background-color: rgba(37, 241, 214, 0.671);
+    background-image: linear-gradient(
+            to bottom,
+            rgba(255, 208, 0, 0.5),
+            rgba(0, 132, 255, 0.5),
+            rgba(255, 0, 76, 0.5)
+        ),
+        linear-gradient(
+            to top right,
+            rgba(0, 0, 255, 0.9),
+            rgba(255, 0, 0, 0.9),
+            rgba(255, 192, 203, 0.9)
+        );
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.project-container {
+    position: relative;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -0%);
+    display: inline-block;
+    text-align: center;
+    border: solid blue;
+    border-radius: 15px;
+    background-color: rgba(2, 148, 245, 0.671);
+    padding: 10px;
+    width: 700px;
+}
+
+.link-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+.padding {
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+.padding:hover {
+    outline: solid;
+
+}
+
+.ext-link {
+    
+}
+
+#source {
+    margin: 0px;
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    border-radius: 5px;
+}
+
+a[target="_blank"]::after {
+    display: inline-block;
+    content: url(./images/arrow-up-right-from-square-solid.svg);
+    position: absolute;
+    width: 14px;
+    padding-left: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:active {
+    color: red;
 }
