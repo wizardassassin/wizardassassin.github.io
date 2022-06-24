@@ -14,10 +14,20 @@ body {
             rgba(255, 0, 0, 0.9),
             rgba(255, 192, 203, 0.9)
         );
-    margin: 0px;
-    width: 100vw;
-    height: 100vh;
-    padding: 0px;
+    margin: 10px;
+    min-width: calc(100vw - 50px);
+    min-height: calc(100vh - 50px);
+    padding: 10px;
+    border: 5px solid dodgerblue;
+    border-image: linear-gradient(
+            to bottom,
+            rgb(201, 200, 255),
+            blue,
+            rgb(90, 88, 184),
+            red,
+            rgb(16, 6, 109)
+        )
+        1;
 }
 
 h1 {
@@ -45,7 +55,6 @@ h1 {
 }
 
 .padding {
-    
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 5px;
@@ -55,11 +64,6 @@ h1 {
 
 .padding:hover {
     outline: solid;
-
-}
-
-.ext-link {
-    
 }
 
 #source {
@@ -76,7 +80,7 @@ a[target="_blank"]::after {
     content: url(./images/arrow-up-right-from-square-solid.svg);
     position: absolute;
     width: 14px;
-    padding-left: 4px;
+    margin: 0px 3px 0px 5px;
 }
 
 a {
