@@ -1,0 +1,78 @@
+html {
+    min-height: 100%;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 32px;
+}
+
+body {
+    font-family: 'Oxygen Mono', monospace;
+    min-height: 100%;
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(112, 184, 212);
+    text-shadow: 4px 4px 4px rgb(128 0 122 / 33%);
+    font-size: 1.2rem;
+}
+
+button.btn {
+    font-family: 'Oxygen Mono', monospace;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgb(128 0 122 / 33%);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    color: yellowgreen;
+    background-color: rgb(97, 100, 243);
+    width: 120px;
+    font-size: 1.1rem;
+}
+
+button.btn:active {
+    background-color: rgb(31, 33, 133);
+}
+
+p#err-msg {
+    margin: 0px;
+    margin-top: 8px;
+    color: red;
+    font-weight: bold;
+    user-select: text;
+}
+
+p.hide {
+    display: none;
+}
+
+div#btn-container {
+    display: block;
+    user-select: none;
+}
+
+div#gen-options-container {
+    margin: 8px;
+    user-select: text;
+}
+
+div#input-spacing {
+    margin: 5px;
+    user-select: text;
+}
+
+div#canvas-container {
+    display: block;
+    border: solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(196, 212, 219);
+    margin: 20px auto;
+    width: fit-content;
+}
+
+canvas#canvas {
+    display: block;
+    background-color: white;
+    user-select: none;
+}

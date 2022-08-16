@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="util.js"></script>
+    <script defer src="puzzlePiece.js"></script>
+    <script defer src="puzzleBoard.js"></script>
+    <script defer src="main.js"></script>
+    <title>Not Simple Puzzle</title>
+</head>
+
+<body>
+    <h1>Puzzle Simulator</h1>
+    <div id="btn-container">
+        <button id="gen" class="btn">Generate</button>
+        <button id="scr" class="btn">Scramble</button>
+        <button id="sol" class="btn">Solve</button>
+        <div id="gen-options-container">
+            <div id="input-spacing">
+                <input type="checkbox" name="noise" id="noise">
+                <label for="noise">Imperfect Board Pieces (NYI)</label>
+            </div>
+            <div id="input-spacing">
+                <input type="checkbox" name="draw" id="draw">
+                <label for="draw">Draw While Solving</label>
+            </div>
+            <div id="input-spacing">
+                <input type="checkbox" name="swap" id="swap">
+                <label for="swap">Draw Piece Swapping (NYI)</label>
+            </div>
+            <div id="input-spacing">
+                <input type="range" name="speed" id="speed">
+                <label for="speed">Draw Speed (NYI)</label>
+            </div>
+        </div>
+        <p id="err-msg" class="hide"></p>
+    </div>
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+    </div>
+</body>
+
+</html>
