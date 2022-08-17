@@ -20,7 +20,11 @@ const imperfectCheckBox = document.getElementById("noise");
 const drawCheckBox = document.getElementById("draw");
 const speedRange = document.getElementById("speed");
 const swapCheckBox = document.getElementById("swap");
-const errorPar = document.getElementById("err-msg");
+const errorDiv = document.getElementById("err-msg-container");
+
+speedRange.min = 0;
+speedRange.max = 1000;
+speedRange.value = 500;
 
 const puzzleRows = 20; // Height
 const puzzleCols = 20; // Width
@@ -28,20 +32,26 @@ const puzzleCols = 20; // Width
 /** @type {PuzzleBoard} */
 let board;
 
+const msgMap = new Map();
+
 generateButton.addEventListener("click", (event) => {
-    errorPar.classList.add("hide");
+    removeChildNodes(errorDiv);
+    msgMap.clear();
     board = new PuzzleBoard(
         puzzleRows,
         puzzleCols,
-        imperfectCheckBox.checked,
-        drawCheckBox.checked,
+        imperfectCheckBox,
+        drawCheckBox,
         () =>
             new Promise((res) =>
                 window.requestAnimationFrame((currTime) => {
                     draw(currTime);
                     res();
                 })
-            )
+            ),
+        speedRange,
+        swapCheckBox,
+        showError
     );
     window.requestAnimationFrame(draw);
 });
@@ -55,24 +65,30 @@ scrambleButton.addEventListener("click", (event) => {
     window.requestAnimationFrame(draw);
 });
 
-solveButton.addEventListener("click", (event) => {
+solveButton.addEventListener("click", async (event) => {
     if (!board) {
         showError("Error: A puzzle needs to be generated first!");
         return;
     }
-    board.solveBoard();
+    await board.solveBoard();
     window.requestAnimationFrame(draw);
 });
 
-let clearError;
-
 function showError(msg) {
+    if (!msgMap.has(msg)) {
+        const errPar = document.createElement("p");
+        errPar.classList.add("err-msg");
+        errPar.textContent = msg;
+        errorDiv.appendChild(errPar);
+        msgMap.set(msg, [null, errPar]);
+    }
+    let [clearError, errPar] = msgMap.get(msg);
     clearTimeout(clearError);
-    errorPar.textContent = msg;
-    errorPar.classList.remove("hide");
     clearError = setTimeout(() => {
-        errorPar.classList.add("hide");
+        errPar.remove();
+        msgMap.delete(msg);
     }, 1500);
+    msgMap.set(msg, [clearError, errPar]);
 }
 
 let prevTime = 0;

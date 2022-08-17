@@ -34,17 +34,20 @@ button.btn:active {
     background-color: rgb(31, 33, 133);
 }
 
-p#err-msg {
+p {
+    user-select: text;
+}
+
+p.err-msg {
     margin: 0px;
     margin-top: 8px;
     color: red;
     font-weight: bold;
-    user-select: text;
 }
 
-p.hide {
+/* p.hide {
     display: none;
-}
+} */
 
 div#btn-container {
     display: block;

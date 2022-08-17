@@ -79,6 +79,12 @@ function sleep(ms) {
     return new Promise((res) => setTimeout(res, ms));
 }
 
+function removeChildNodes(parent) {
+    while (parent.firstElementChild) {
+        parent.removeChild(parent.firstElementChild);
+    }
+}
+
 /**
  * Node of a linked list.
  */

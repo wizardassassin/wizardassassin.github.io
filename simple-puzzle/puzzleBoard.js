@@ -4,7 +4,12 @@ class PuzzleBoard {
     isImperfect;
     drawWhile;
     drawFunc;
+    drawTime;
     swapVal;
+    showErr;
+    staticSwap;
+    isSolving;
+    isScrambled;
     board;
 
     /**
@@ -14,21 +19,40 @@ class PuzzleBoard {
      */
 
     /**
+     * Callback for outputting an error.
+     *
+     * @callback errCallback
+     */
+
+    /**
      *
      * @param {Number} rows
      * @param {Number} cols
-     * @param {Boolean} isImperfect
-     * @param {Boolean} drawWhile
+     * @param {HTMLInputElement} isImperfect
+     * @param {HTMLInputElement} drawWhile
      * @param {drawCallback} drawFunc
-     * @param {Boolean} swapVal
+     * @param {HTMLInputElement} drawTime
+     * @param {HTMLInputElement} swapVal
+     * @param {errCallback} showErr
      */
-    constructor(rows, cols, isImperfect, drawWhile, drawFunc, swapVal) {
+    constructor(
+        rows,
+        cols,
+        isImperfect,
+        drawWhile,
+        drawFunc,
+        drawTime,
+        swapVal,
+        showErr
+    ) {
         this.rows = rows;
         this.cols = cols;
         this.isImperfect = isImperfect;
         this.drawWhile = drawWhile;
         this.drawFunc = drawFunc;
+        this.drawTime = drawTime;
         this.swapVal = swapVal;
+        this.showErr = showErr;
         this.board = [];
         for (let i = 0; i < rows; i++) {
             /** @type {Array<PuzzlePiece>} */
@@ -140,6 +164,10 @@ class PuzzleBoard {
     }
 
     scrambleBoard() {
+        if (this.isSolving) {
+            this.showErr("Error: Can't scramble while solving!");
+            return;
+        }
         shuffle2D(this.board);
         for (let i = 0; i < this.rows; i++) {
             for (let j = 0; j < this.cols; j++) {
@@ -149,27 +177,55 @@ class PuzzleBoard {
                 piece.scramblePiece();
             }
         }
+        this.isScrambled = true;
     }
 
     async modifyBoard(i, j, val) {
         const tmpVal = this.board[i][j];
         this.board[i][j] = val;
-        if (this.drawWhile) {
-            if (true) {
+        if (this.drawWhile.checked) {
+            if (this.staticSwap !== this.swapVal.checked) {
+                this.showErr(
+                    "Error: Piece swapping can't be changed while solving!"
+                );
+                this.swapVal.checked = this.staticSwap;
+            }
+            if (this.staticSwap) {
                 tmpVal.i2 = val.i2;
                 tmpVal.j2 = val.j2;
-                this.board[val.i2][val.j2] = tmpVal;
+                val.i2 = i;
+                val.j2 = j;
+                this.board[tmpVal.i2][tmpVal.j2] = tmpVal;
             }
+            // https://www.desmos.com/calculator/nfv6la99mi
+            const x = this.drawTime.value;
+            const time = 1000 - Math.sqrt(2000 * x - x ** 2); // Curved
+            // const time = 1000 - x; // Linear
             const start = performance.now();
             await this.drawFunc();
-            const wait = 10 - (performance.now() - start);
+            const wait = time - (performance.now() - start);
             await sleep(wait);
             // console.log(wait);
         }
     }
 
     async solveBoard() {
-        if (this.isImperfect) {
+        if (this.isSolving) {
+            this.showErr("Error: Can't solve while solving!");
+            return;
+        }
+        this.isSolving = true;
+        if (!this.isScrambled) {
+            for (let i = 0; i < this.rows; i++) {
+                for (let j = 0; j < this.cols; j++) {
+                    const piece = this.board[i][j];
+                    piece.i2 = i;
+                    piece.j2 = j;
+                }
+            }
+        }
+        this.staticSwap = this.swapVal.checked;
+        if (this.isImperfect.checked) {
             this.solveBoardImperfect();
             return;
         }
@@ -347,7 +403,11 @@ class PuzzleBoard {
             }
         }
         // Logic Center End
+        this.isSolving = false;
+        this.isScrambled = false;
     }
 
-    solveBoardImperfect() {}
+    solveBoardImperfect() {
+        console.error("Not yet implemented.");
+    }
 }
